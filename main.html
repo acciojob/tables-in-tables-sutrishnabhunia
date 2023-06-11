@@ -33,11 +33,9 @@ ul li:before {
   width: 1em;
   margin-left: -1em;
 }
-
 </style>
 </head>
 <body>
-
 <table>
   <tr>
     <th>SL No.</th>
@@ -53,9 +51,14 @@ ul li:before {
     <td>1 year</td>
     <td>
       <table class="inner-table">
+        <caption>Nested Table 1</caption>
         <tr>
-          <td>Position 1</td>
-          <td>Position 2</td>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>Value 1</td>
+          <td>Value 2</td>
         </tr>
       </table>
     </td>
@@ -66,13 +69,19 @@ ul li:before {
     <td>City B</td>
     <td>2 years</td>
     <td>
-      <ul>
-        <li>Position 1</li>
-        <li>Position 2</li>
-      </ul>
+      <table class="inner-table">
+        <caption>Nested Table 2</caption>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>Value 1</td>
+          <td>Value 2</td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
-
 </body>
 </html>
